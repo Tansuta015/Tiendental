@@ -1,0 +1,37 @@
+.nav-link{
+  color: #fff;
+}
+.navbar {
+  background: #00bcd5; 
+}
+.display-8{
+  color: #fff;
+ }
+
+ .calen{
+  margin-top: 50px;
+  margin-left: 430px;
+  width: 950px;
+  height: 750px;
+
+}
+
+.re{
+  
+  margin-left: 130px;
+  width: 1000px;
+  height: 800px;
+
+}
+.report{
+  
+  margin-left: 70px;
+  width: 1000px;
+  height: 800px;
+
+}
+
+.headreport{
+  margin-left: 400px;
+  
+}

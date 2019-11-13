@@ -87,7 +87,7 @@ class Fullcalendar {
 		
 		$db = $this->connect();
 		
-		$add_user = $db->prepare("UPDATE bookq SET Type = ? , Detail = ? ,start = ?,end = ?,Time = ? WHERE BookID = ?");
+		$add_user = $db->prepare("UPDATE bookq SET Type = ? , Detail = ? ,start = ?,end = ?,Time = ?, situation = '1' WHERE BookID = ?");
 		
 		$add_user->bind_param("sssssi",$_POST["Type"],$_POST["Detail"],$_POST["start"],$_POST["start"],$_POST["Time"],$data['edit_calendar_BookID']);
 		
@@ -118,6 +118,7 @@ class Fullcalendar {
 		}else{
 			echo "ลบข้อมูลเรียบร้อย";
 		}
-	}	
+	}
+		
 }
 ?>

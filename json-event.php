@@ -194,11 +194,13 @@ if(isset($_POST['CusID'])){
 
 				  
 					<input type="hidden" name="edit_calendar_BookID" value="'.$get_data['BookID'].'">
+					
 				</form>
 			</div>
 		  <div class="modal-footer">
 				<button type="button" class="btn btn-danger pull-left" onclick="return del_calendar('.$get_data['BookID'].');">Delete</button>
 				<button type="button" class="btn btn-primary" onclick="return edit_calendar();">Save changes</button>
+				<button type="button" class="btn btn-primary" onclick="return edit_calendar();">Done</button>
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 		  </div>';
 	echo $output;
@@ -221,4 +223,5 @@ if(isset($_POST['del_id'])){
 	
 	$fullcalendar->del_calendar($_POST['del_id']);
 }
+
 ?>

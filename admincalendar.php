@@ -120,10 +120,9 @@ if ($conn->connect_error) {
 
         <script>
                    
-                   var today = new Date();
+                   
                     $('#datepicker').datepicker({
-                       format:'yyyy-mm-dd',
-                       minDate: today,
+                       format:'yyyy-mm-dd'
                         // uiLibrary: 'bootstrap4'
                     });
                   
